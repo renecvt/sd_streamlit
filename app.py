@@ -2,7 +2,11 @@ from functools import reduce
 import operator
 import json
 import streamlit as st
+import base64
+import streamlit.components.v1 as components
 import requests
+import networkx as nx
+from ipysigma import Sigma
 
 paths = {
   "Type": ["myASG", "Type"],
